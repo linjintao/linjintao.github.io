@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://linjintao.github.io/sitemap.xml 
