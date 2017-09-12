@@ -4,7 +4,7 @@
   <title><![CDATA[MachinePlayer]]></title>
   <link href="http://linjintao.github.io/atom.xml" rel="self"/>
   <link href="http://linjintao.github.io/"/>
-  <updated>2017-09-12T22:18:03+08:00</updated>
+  <updated>2017-09-13T00:10:06+08:00</updated>
   <id>http://linjintao.github.io/</id>
   <author>
     <name><![CDATA[MachinePlayer]]></name>
@@ -12,5 +12,100 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Build a Blog With Github Pages]]></title>
+    <link href="http://linjintao.github.io/blog/2017/09/12/build-a-blog-with-github-pages/"/>
+    <updated>2017-09-12T23:21:01+08:00</updated>
+    <id>http://linjintao.github.io/blog/2017/09/12/build-a-blog-with-github-pages</id>
+    <content type="html"><![CDATA[<h2>Requirements</h2>
+
+<ul>
+<li>Git</li>
+<li>Ruby > 1.9.3</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># install Ruby package
+</span><span class='line'>gem install bundle
+</span><span class='line'>gem install bundler</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Octopress</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># install Octopress
+</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'>cd octopress
+</span><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Setup Github Pages</h2>
+
+<ul>
+<li>Make sure SSH keys has been added to your github account</li>
+<li>Create a repo which must be named as your_github_name.github.io</li>
+<li>Setup local repo, and push to remote repo</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
+</span><span class='line'># enter your github repo url
+</span><span class='line'>https://github.com/your_username/your_username.github.io
+</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># generate static pages
+</span><span class='line'>rake generate
+</span><span class='line'># preview blog
+</span><span class='line'>rake preview
+</span><span class='line'># push to remote re
+</span><span class='line'>po
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Add Custom Domain Name</h2>
+
+<p>Now you can acess your blog by <a href="https://yourname.github.io.">https://yourname.github.io.</a> You can also add your custom domain name
++ Goto your repo in github, and click setting, fill with your custon domain name
++ Add a CNAME : &ldquo;yourname.github.io&rdquo; to your DNS service provider</p>
+
+<h2>Customize Octopress</h2>
+
+<ul>
+<li>Add a page and post</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_page['page_name']
+</span><span class='line'>rake new_post["Post Title"]</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
 </feed>
