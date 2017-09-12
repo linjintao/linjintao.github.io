@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[MachinePlayer]]></title>
+  <link href="http://linjintao.github.io/atom.xml" rel="self"/>
+  <link href="http://linjintao.github.io/"/>
+  <updated>2017-09-12T22:18:03+08:00</updated>
+  <id>http://linjintao.github.io/</id>
+  <author>
+    <name><![CDATA[MachinePlayer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
